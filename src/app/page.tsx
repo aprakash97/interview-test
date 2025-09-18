@@ -21,7 +21,7 @@ export default function Home() {
       {lanes.filter((lane, index, self) =>
         index === self.findIndex((t) => (t.status_id === lane.status_id))
       ).map(lane => (
-        <SwimLane key={lane.status_id} title={lane.main_status} />
+        <SwimLane key={lane.status_id} status={lane.status_id} title={lane.main_status} />
       ))}
     </div>
   );
