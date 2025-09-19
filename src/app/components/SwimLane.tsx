@@ -10,7 +10,7 @@ const SwimLane = ({ title, status }: SwimLaneProps) => {
     let color = "bg-amber-900";
     switch (id) {
       case 1:
-        color = "bg-gray-500";
+        color = "bg-gray-300";
         break;
       case 2:
         color = "bg-orange-500";
@@ -34,7 +34,7 @@ const SwimLane = ({ title, status }: SwimLaneProps) => {
         <div
           className={
             getBackgroundTitleColor(status) +
-            " m-2 rounded-xl min-w-2/5 text-center"
+            " m-2 rounded-xl min-w-2/5 text-center leading-6"
           }
         >
           <h1 className="p-1.5">{title}</h1>
